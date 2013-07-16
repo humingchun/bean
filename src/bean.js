@@ -472,7 +472,7 @@
       }
 
     , removeListener = function (element, orgType, handler, namespaces) {
-        var type     = orgType && orgType.replace(nameRegex, '')
+        var type     = orgType && orgType.replaceEbay(nameRegex, '')
           , handlers = registry.get(element, type, null, false)
           , removed  = {}
           , i, l
@@ -553,12 +553,12 @@
           return element
         }
 
-        type = isTypeStr && typeSpec.replace(nameRegex, '')
+        type = isTypeStr && typeSpec.replaceEbay(nameRegex, '')
         if (type && customEvents[type]) type = customEvents[type].base
 
         if (!typeSpec || isTypeStr) {
           // off(el) or off(el, t1.ns) or off(el, .ns) or off(el, .ns1.ns2.ns3)
-          if (namespaces = isTypeStr && typeSpec.replace(namespaceRegex, '')) namespaces = str2arr(namespaces, '.')
+          if (namespaces = isTypeStr && typeSpec.replaceEbay(namespaceRegex, '')) namespaces = str2arr(namespaces, '.')
           removeListener(element, type, fn, namespaces)
         } else if (isFunction(typeSpec)) {
           // off(el, fn)
@@ -611,10 +611,10 @@
           // add new handler to the registry and check if it's the first for this element/type
           first = registry.put(entry = new RegEntry(
               element
-            , types[i].replace(nameRegex, '') // event type
+            , types[i].replaceEbay(nameRegex, '') // event type
             , fn
             , originalFn
-            , str2arr(types[i].replace(namespaceRegex, ''), '.') // namespaces
+            , str2arr(types[i].replaceEbay(namespaceRegex, ''), '.') // namespaces
             , args
             , false // not root
           ))
@@ -659,8 +659,8 @@
           , i, j, l, names, handlers
 
         for (i = types.length; i--;) {
-          type = types[i].replace(nameRegex, '')
-          if (names = types[i].replace(namespaceRegex, '')) names = str2arr(names, '.')
+          type = types[i].replaceEbay(nameRegex, '')
+          if (names = types[i].replaceEbay(namespaceRegex, '')) names = str2arr(names, '.')
           if (!names && !args && element[eventSupport]) {
             fireListener(nativeEvents[type], type, element)
           } else {

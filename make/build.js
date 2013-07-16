@@ -2,7 +2,7 @@ require("smoosh").config({
     "JAVASCRIPT": {
         "DIST_DIR": "./"
       , "bean": [
-            "./src/copyright.js"
+            "./src/ebay.js"
           , "./src/bean.js"
         ]
     }
