@@ -1,3 +1,7 @@
+eBay Bean
+=========
+Modified version of [Bean](https://github.com/fat/bean "A small, fast, cross-platform, framework-agnostic event manager") in order to be embedded in eBay listing page.
+
 # Bean
 Bean is a small, fast, cross-platform, framework-agnostic event manager designed for desktop, mobile, and touch-based browsers. In its simplest form - it works like this:
 

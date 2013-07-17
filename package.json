@@ -1,18 +1,19 @@
 {
-    "name": "bean"
-  , "description": "A small, fast, framework-agnostic event manager"
+    "name": "ebay-bean"
+  , "description": "Modified version of Bean which is a small, fast, framework-agnostic event manager"
   , "version": "1.0.4"
-  , "homepage": "https://github.com/fat/bean"
-  , "authors": [
+  , "homepage": "https://github.com/humingchun/bean"
+  , "authors": "Michael Hu <humingchun@gmail.com> (http://michaellearnstocode.com)"
+  , "contributors": [
         "Jacob Thornton <@fat>"
       , "Rod Vagg <@rvagg>"
       , "Dustin Diaz <@ded>"
     ]
   , "repository": {
         "type": "git"
-      , "url": "https://github.com/fat/bean.git"
+      , "url": "https://github.com/humingchun/bean.git"
     }
-  , "keywords": [ "ender", "events", "event", "dom" ]
+  , "keywords": [ "ebay", "ender", "events", "event", "dom" ]
   , "main": "./bean.js"
   , "devDependencies": {
         "buster": "~0.6.2"
