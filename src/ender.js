@@ -1,5 +1,5 @@
 !function ($) {
-  var b = require('bean')
+  var b = require('ebay-bean')
 
     , integrate = function (method, type, method2) {
         var _args = type ? [type] : []

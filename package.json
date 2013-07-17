@@ -1,7 +1,7 @@
 {
     "name": "ebay-bean"
   , "description": "Modified version of Bean which is a small, fast, framework-agnostic event manager"
-  , "version": "1.0.4"
+  , "version": "1.0.4-1"
   , "homepage": "https://github.com/humingchun/bean"
   , "authors": "Michael Hu <humingchun@gmail.com> (http://michaellearnstocode.com)"
   , "contributors": [
